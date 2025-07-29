@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marchan Hub - Serviços completos de desenvolvimento web e aplicações. Fullstack, PWA, e soluções digitais para empresas.">
+    <meta name="keywords" content="desenvolvimento web, fullstack, PWA, PHP, JavaScript, CSS, HTML, aplicações web">
+    <meta name="author" content="Marchan Hub">
+    <title>MH - Marchan Hub | Desenvolvimento Web Fullstack</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagens/LogotipoMh.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css?v=1.5">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="imagens/LogotipoMh.png" alt="MH Logo" class="logo">
+                    <span class="brand-name">Marchan Hub</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                    <a href="#sobre" class="nav-link" data-translate="nav-sobre">Sobre Nós</a>
+                    <a href="#servicos" class="nav-link" data-translate="nav-servicos">Serviços</a>
+                    <a href="#portfolio" class="nav-link" data-translate="nav-portfolio">Portfólio</a>
+                    <a href="#contacto" class="nav-link" data-translate="nav-contacto">Contacto</a>
+                </div>
+                
+                <div class="nav-controls">
+                    <!-- Seletor de idioma -->
+                    <select id="language-selector" class="language-selector">
+                        <option value="pt">🇵🇹 PT</option>
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="zh">🇨🇳 中文</option>
+                    </select>
+                    
+                    <!-- Botão modo escuro -->
+                    <button id="dark-mode-toggle" class="dark-mode-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <!-- Menu mobile -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="hero-title">
+                    Transformamos ideias em <span class="highlight">realidade digital</span>
+                </h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">
+                    Desenvolvimento web fullstack, aplicações web e PWA para impulsionar o seu negócio
+                </p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn btn-primary" data-translate="btn-servicos">Ver Serviços</a>
+                    <a href="#contacto" class="btn btn-secondary" data-translate="btn-contacto">Falar Connosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="sobre-title">Sobre a Marchan Hub</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="sobre-text">
+                        Somos uma empresa especializada em desenvolvimento web fullstack, 
+                        focada em criar soluções digitais inovadoras e eficientes para empresas 
+                        de todos os tamanhos. Combinamos as mais recentes tecnologias com 
+                        design intuitivo para entregar produtos excepcionais.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-translate="stat-projetos">Projetos Concluídos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-translate="stat-satisfacao">Satisfação</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label" data-translate="stat-suporte">Suporte</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title" data-translate="servicos-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <!-- Desenvolvimento Web -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="servico-web-title">Desenvolvimento Web</h3>
+                    <p class="service-description" data-translate="servico-web-desc">
+                        Criamos websites profissionais e responsivos usando HTML5, CSS3, JavaScript e PHP. 
+                        Sites otimizados para SEO, rápidos e compatíveis com todos os dispositivos.
+                    </p>
+                    <ul class="service-features">
+                        <li data-translate="web-feature-1">Design responsivo</li>
+                        <li data-translate="web-feature-2">Otimização SEO</li>
+                        <li data-translate="web-feature-3">Integração com redes sociais</li>
+                        <li data-translate="web-feature-4">Painel de administração</li>
+                    </ul>
+                </div>
+
+                <!-- Aplicações Web -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="servico-app-title">Aplicações Web</h3>
+                    <p class="service-description" data-translate="servico-app-desc">
+                        Desenvolvemos aplicações web completas com base de dados MySQL/phpMyAdmin. 
+                        Sistemas de gestão, e-commerce, dashboards e muito mais.
+                    </p>
+                    <ul class="service-features">
+                        <li data-translate="app-feature-1">Base de dados MySQL</li>
+                        <li data-translate="app-feature-2">API RESTful</li>
+                        <li data-translate="app-feature-3">Autenticação segura</li>
+                        <li data-translate="app-feature-4">Backup automático</li>
+                    </ul>
+                </div>
+
+                <!-- PWA -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="servico-pwa-title">PWA - Progressive Web Apps</h3>
+                    <p class="service-description" data-translate="servico-pwa-desc">
+                        Transformamos websites em aplicações móveis nativas. PWAs oferecem 
+                        experiência offline, notificações push e instalação direta no dispositivo.
+                    </p>
+                    <ul class="service-features">
+                        <li data-translate="pwa-feature-1">Funcionamento offline</li>
+                        <li data-translate="pwa-feature-2">Notificações push</li>
+                        <li data-translate="pwa-feature-3">Instalação no dispositivo</li>
+                        <li data-translate="pwa-feature-4">Performance otimizada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Tecnologias -->
+    <section class="technologies">
+        <div class="container">
+            <h2 class="section-title" data-translate="tech-title">Tecnologias que Utilizamos</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-php"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-translate="portfolio-title">Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3 data-translate="projeto-1-title">E-commerce Completo</h3>
+                        <p data-translate="projeto-1-desc">Plataforma de vendas online com gestão de produtos</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3 data-translate="projeto-2-title">Dashboard Empresarial</h3>
+                        <p data-translate="projeto-2-desc">Sistema de gestão com relatórios em tempo real</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3 data-translate="projeto-3-title">PWA para Restaurante</h3>
+                        <p data-translate="projeto-3-desc">Aplicação móvel para pedidos online</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contacto-title">Fale Connosco</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-translate="contacto-email">Email</h3>
+                            <p>carlosr@marchanhub.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-translate="contacto-telefone">Telefone</h3>
+                            <p>+351 223 791 363</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h3 data-translate="contacto-telemovel">Telemóvel</h3>
+                            <p>+351 915 510 790</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-translate="contacto-localizacao">Localização</h3>
+                            <p>Portugal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="nome" data-translate="form-nome">Nome Completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" data-translate="form-email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="assunto" name="assunto" required>
+                        <label for="assunto" data-translate="form-assunto">Assunto</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <label for="mensagem" data-translate="form-mensagem">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate="form-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<br>
+<br>
+<br>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="imagens/LogotipoMh.png" alt="MH Logo" class="logo">
+                        <span class="brand-name">Marchan Hub</span>
+                    </div>
+                    <p data-translate="footer-desc">
+                        Transformando ideias em soluções digitais inovadoras.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-servicos">Serviços</h3>
+                    <ul>
+                        <li><a href="#servicos" data-translate="footer-web">Desenvolvimento Web</a></li>
+                        <li><a href="#servicos" data-translate="footer-app">Aplicações Web</a></li>
+                        <li><a href="#servicos" data-translate="footer-pwa">PWA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-contacto">Contacto</h3>
+                    <ul>
+                        <li>carlosr@marchanhub.com</li>
+                        <li>+351 223 791 363</li>
+                        <li>+351 915 510 790</li>
+                        <li>Portugal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Marchan Hub. <span data-translate="footer-direitos">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js?v=1.5"></script>
+</body>
+</html>
